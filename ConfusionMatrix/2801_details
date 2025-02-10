@@ -5,3 +5,5 @@ Decoder Hidden Units: [32, 16]
 MiniBatchSize: 500
 Max Epochs: 200
 Solver: Adam
+Learning Rate Schedule: constant
+Learning rate: 0.001
