@@ -1,0 +1,10 @@
+data: collected Iridium data (27-01 1)
+Jamming: Sine
+model: LSTM AE
+Encoder Hidden Units: [64, 32]
+Decoder Hidden Units: [64, 32]
+MiniBatchSize: 500
+Max Epochs: 200
+Solver: sgdm
+Learning Rate Schedule: cyclic
+Learning rate: 0.0002
