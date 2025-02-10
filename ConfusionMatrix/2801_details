@@ -1,4 +1,5 @@
 data: w15.mat from  Alhazbi, S., Sciancalepore, S., & Oligeri, G. (2023). A Dataset of physical-layer measurements in indoor wireless jamming scenarios. Data in Brief, 46, Article 108773. https://doi.org/10.1016/j.dib.2022.108773
+Jamming: Sine, Guassian
 model: LSTM AE
 Encoder Hidden Units: [32, 16]
 Decoder Hidden Units: [32, 16]
