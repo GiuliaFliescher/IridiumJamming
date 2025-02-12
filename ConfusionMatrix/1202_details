@@ -1,0 +1,11 @@
+data: collected Iridium data (normal 21-01 1, jammed 11-02 2)
+Jamming: Guassian
+model: LSTM AE
+Encoder Hidden Units: [64, 32]
+Decoder Hidden Units: [64, 32]
+WindowLength: fullSignal
+MiniBatchSize: 1500
+Max Epochs: 700
+Solver: rmsprop
+Learning Rate Schedule: cyclic
+Learning rate: 0.001
