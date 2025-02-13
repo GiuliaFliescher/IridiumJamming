@@ -1,5 +1,16 @@
 data: collected Iridium data (normal 21-01 1, jammed 11-02 2)
+Sample rate: 10000000
+frequency: 1622000000
+bandwith: 9000000
+gain: 30
+
 Jamming: Guassian
+Amplitude:1
+Mulitplication constant: 2
+Gain: 73
+frequency: 1622000000
+Sample rate: 10000000
+
 model: LSTM AE
 Encoder Hidden Units: [64, 32]
 Decoder Hidden Units: [64, 32]
