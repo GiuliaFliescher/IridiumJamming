@@ -13,4 +13,5 @@ sudo cmake --install build
 sudo ldconfig
 ```
 
+To start run ```source prefix-3.10/setup_env.sh``` 
 tbc
