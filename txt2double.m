@@ -12,7 +12,7 @@ iqData = regexp(rawText, iqPattern, 'tokens');
 iqArray = cellfun(@(x) str2double(x), vertcat(iqData{:}));
 
 % Reshape into Nx2 matrix (I and Q components)
-iqframes_2402_pt1 = reshape(iqArray, [], 2);
+iqframes_2402_pt1 = reshape(iqArray, [], 1);
 
 % Display the first few rows
 disp(iqframes_2402_pt1(1:10, :)); 
