@@ -1,7 +1,9 @@
 function SNR_dB = calculate_snr(iq_data)
+    load(iq_data);
+    iq_data=jamming;
     % Extract I and Q components
-    I = iq_data(:,1); % First column is I
-    Q = iq_data(:,2); % Second column is Q
+    I = iq_data(1:2:end); % First column is I
+    Q = iq_data(2:2:end); % Second column is Q
     
     % Compute received signal power (P_rx) in dBm
     P_rx_dBm = 30 + 10 * log10(I.^2 + Q.^2);
@@ -36,5 +38,6 @@ function SNR_dB = calculate_snr(iq_data)
     SNR_dB = P_rx_dBm - N_dBm;
     
     % Display result
-    fprintf('Average SNR: %.2f dB\n', mean(SNR_dB));
+    %pfigure
+    %histogram(SNR_dB)
 end
